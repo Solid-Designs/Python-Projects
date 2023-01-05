@@ -1,0 +1,25 @@
+Project 1:
+Build an app for tracking lacrosse goalie statistics with shot charting
+
+Project 2:
+Scrape a Competitor Website. . .
+Details:
+Need someone to build a repeatable script I can use to pull data from a site. 
+I need to know what has been newly added to the site and what has been removed.
+Clean output in .csv format
+
+Project 3:
+Automated Sports Bet Placement
+Details:
+I am looking for a python script that will automatically place bets on a variety of sports books.
+Using parameters the user inputs.
+
+Project 4:
+Discord Music Bot
+Details:
+Make a Discord bot that plays copyright free Music
+
+Project 5:
+Build a contact script
+Details:
+Scrape real estate websites for owners and associated phone numbers
