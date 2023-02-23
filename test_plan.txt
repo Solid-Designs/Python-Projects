@@ -1,1 +1,0 @@
-['Rotel Dip', 'Taco Bowls', 'Chicken Riggies', 'Chicken Tenders and Fries', 'Chicken and Dumplings', 'Salads', 'Fajitas', 'Burgers']
