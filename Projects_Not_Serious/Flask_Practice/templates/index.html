@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>Hello {{username}}</h1>
+        {% if username == 'Burrito' %}
+            <p>Nice cheeks ya got there</p>
+        {% else %}
+            <p>You aint got shit, homie</p>
+        {% endif %}
+
+        <ul>
+            {% for meal in meals %}
+            <li>{{meal}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
