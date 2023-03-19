@@ -19,6 +19,7 @@ function main() {
           var campaignNames = getCampaignNames();
     
           for (var i = 0; i < campaignNames.length; i++) {
+            // It's getRange(i + 2, 1) to make sure that I am not overwriting the header row
               sheet.getRange(i + 2, 1).setValue(campaignNames[i]);
           }
       }

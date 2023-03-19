@@ -13,9 +13,9 @@ function main() {
     return new Date(year, month, 0).getDate();
   }
   
-  // Get the MTD cost **NOTE: This will need to be updated because there is only one campaign here**
+  // Get the MTD cost
   function getMonthlySpend() {
-    var campaignSelector = AdsApp.campaigns().withCondition("campaign.status = ENABLED");
+    var campaignSelector = AdsApp.campaigns();
     var campaignIterator = campaignSelector.get();
     
     var sum = 0;
@@ -44,8 +44,8 @@ function updateBudgets() {
   // Loop through the rows in the sheet and update the budgets for the specified campaigns
   for (var i = 1; i < data.length; i++) {
       // Row 1 is the header row, so we skip it
-      // Row 2 is the first row of data and it is the campaign name
-      // Column 1 is the second row of data and it is the budget
+      // Column 1 is the campaign names
+      // Column 2 is the budget
       var campaignName = data[i][0];
       var percentage = data[i][1];
       
