@@ -49,7 +49,7 @@ function updateBudgets() {
       var campaignName = data[i][0];
       var percentage = data[i][1];
       
-      console.log("The budget should be: ", Math.round(dailyBudget * (percentage/100)));
+      console.log("The budget should be: ", Math.round(dailyBudget * (percentage)));
     
       // Get the campaign name from the sheet and update the budget
     
@@ -58,7 +58,7 @@ function updateBudgets() {
           .get();
       if (campaignIterator.hasNext()) {
           var campaign = campaignIterator.next();
-          campaign.getBudget().setAmount(Math.round(dailyBudget * (percentage/100)));
+          campaign.getBudget().setAmount(Math.round(dailyBudget * (percentage)));
       }
   }
 }
