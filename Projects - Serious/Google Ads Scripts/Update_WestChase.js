@@ -37,9 +37,15 @@ function updateBudgets() {
   var data = sheet.getDataRange().getValues();
   var budget = data[1][2];
   
-  // Get the total budget amount, subtract it from the current MTD spend, then divide by the amount of days left in the current month
-  var dailyBudget = Math.round((parseFloat(budget) - getMonthlySpend()) / getDaysInMonth());
-  console.log(dailyBudget);
+  if (getDaysInMonth() == 0) {
+    var dailyBudget = Math.round((parseFloat(budget) - getMonthlySpend()));
+    console.log(dailyBudget);
+  }
+  else { 
+    // Get the total budget amount, subtract it from the current MTD spend, then divide by the amount of days left in the current month
+    var dailyBudget = Math.round((parseFloat(budget) - getMonthlySpend()) / getDaysInMonth());
+    console.log(dailyBudget);
+  }
 
   // Loop through the rows in the sheet and update the budgets for the specified campaigns
   for (var i = 1; i < data.length; i++) {
