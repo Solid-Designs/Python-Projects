@@ -1,11 +1,6 @@
-class Person:
-    def __init__(self, name, age, gender):
-        self.name = name
-        self.age = age
-        self.gender = gender
-    
-    def say_hello(self):
-        print(f'Hello my name is {self.name}')
+a = 4
+b = 5
+n = 2
+e = pow(a,n) + pow(b,n)
 
-stephanie = Person('Stephanie', 29, 'Female')
-print(stephanie.age)
+print (e**(1/2))
